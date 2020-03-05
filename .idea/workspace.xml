@@ -47,7 +47,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.findIndexOfElementTest">
+  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.removeTwoElementsFromListTest">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -102,7 +102,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.checkSizeEmptyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="singlylinkedlist" />
       <extension name="coverage">
         <pattern>
@@ -112,14 +112,30 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
       <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="checkSizeEmptyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SinglyLinkedListTest.listClearALLTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="singlylinkedlist" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zipcodewilmington.singlylinkedlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
+      <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
+      <option name="METHOD_NAME" value="listClearALLTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.checkSizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.listClearTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="singlylinkedlist" />
       <extension name="coverage">
         <pattern>
@@ -129,14 +145,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
       <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="checkSizeTest" />
+      <option name="METHOD_NAME" value="listClearTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.findIndexOfElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.removeElementFromListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="singlylinkedlist" />
       <extension name="coverage">
         <pattern>
@@ -146,14 +162,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
       <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="findIndexOfElementTest" />
+      <option name="METHOD_NAME" value="removeElementFromListTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.getElementByIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.removeTwoElementsFromListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="singlylinkedlist" />
       <extension name="coverage">
         <pattern>
@@ -163,24 +179,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
       <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="getElementByIndex" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SinglyLinkedListTest.getElementByIndexMiddle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="singlylinkedlist" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zipcodewilmington.singlylinkedlist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
-      <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="getElementByIndexMiddle" />
+      <option name="METHOD_NAME" value="removeTwoElementsFromListTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -248,11 +247,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SinglyLinkedListTest.findIndexOfElementTest" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.checkSizeEmptyTest" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.checkSizeTest" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.getElementByIndexMiddle" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.getElementByIndex" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.removeTwoElementsFromListTest" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.removeElementFromListTest" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.listClearALLTest" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.listClearTest" />
+        <item itemvalue="JUnit.SinglyLinkedListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -266,7 +265,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515621994762</updated>
-      <workItem from="1583340312655" duration="17874000" />
+      <workItem from="1583340312655" duration="20868000" />
     </task>
     <servers />
   </component>
@@ -278,26 +277,26 @@
       <screen x="0" y="23" width="1920" height="1015" />
     </state>
     <state x="773" y="238" key="#com.intellij.ide.util.MemberChooser/-1280.23.1280.777/0.23.1920.1015@0.23.1920.1015" timestamp="1583363720655" />
-    <state width="1238" height="121" key="GridCell.Tab.0.bottom" timestamp="1583376593420">
+    <state width="1238" height="148" key="GridCell.Tab.0.bottom" timestamp="1583379723839">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
     <state width="1877" height="218" key="GridCell.Tab.0.bottom/-1280.23.1280.777/0.23.1920.1015@0.23.1920.1015" timestamp="1583368620563" />
-    <state width="1238" height="121" key="GridCell.Tab.0.bottom/0.23.1280.735@0.23.1280.735" timestamp="1583376593420" />
-    <state width="1238" height="121" key="GridCell.Tab.0.center" timestamp="1583376593419">
+    <state width="1238" height="148" key="GridCell.Tab.0.bottom/0.23.1280.735@0.23.1280.735" timestamp="1583379723839" />
+    <state width="1238" height="148" key="GridCell.Tab.0.center" timestamp="1583379723838">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
     <state width="1877" height="218" key="GridCell.Tab.0.center/-1280.23.1280.777/0.23.1920.1015@0.23.1920.1015" timestamp="1583368620562" />
-    <state width="1238" height="121" key="GridCell.Tab.0.center/0.23.1280.735@0.23.1280.735" timestamp="1583376593419" />
-    <state width="1238" height="121" key="GridCell.Tab.0.left" timestamp="1583376593418">
+    <state width="1238" height="148" key="GridCell.Tab.0.center/0.23.1280.735@0.23.1280.735" timestamp="1583379723838" />
+    <state width="1238" height="148" key="GridCell.Tab.0.left" timestamp="1583379723837">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
     <state width="1877" height="218" key="GridCell.Tab.0.left/-1280.23.1280.777/0.23.1920.1015@0.23.1920.1015" timestamp="1583368620561" />
-    <state width="1238" height="121" key="GridCell.Tab.0.left/0.23.1280.735@0.23.1280.735" timestamp="1583376593418" />
-    <state width="1238" height="121" key="GridCell.Tab.0.right" timestamp="1583376593419">
+    <state width="1238" height="148" key="GridCell.Tab.0.left/0.23.1280.735@0.23.1280.735" timestamp="1583379723837" />
+    <state width="1238" height="148" key="GridCell.Tab.0.right" timestamp="1583379723838">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
     <state width="1877" height="218" key="GridCell.Tab.0.right/-1280.23.1280.777/0.23.1920.1015@0.23.1920.1015" timestamp="1583368620563" />
-    <state width="1238" height="121" key="GridCell.Tab.0.right/0.23.1280.735@0.23.1280.735" timestamp="1583376593419" />
+    <state width="1238" height="148" key="GridCell.Tab.0.right/0.23.1280.735@0.23.1280.735" timestamp="1583379723838" />
     <state width="1238" height="143" key="GridCell.Tab.1.bottom" timestamp="1583375234714">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
@@ -318,9 +317,10 @@
     </state>
     <state width="1877" height="345" key="GridCell.Tab.1.right/-1280.23.1280.777/0.23.1920.1015@0.23.1920.1015" timestamp="1583368444855" />
     <state width="1238" height="143" key="GridCell.Tab.1.right/0.23.1280.735@0.23.1280.735" timestamp="1583375234714" />
-    <state x="625" y="247" width="670" height="676" key="search.everywhere.popup" timestamp="1583367786975">
-      <screen x="0" y="23" width="1920" height="1015" />
+    <state x="417" y="185" width="670" height="490" key="search.everywhere.popup" timestamp="1583377510009">
+      <screen x="0" y="23" width="1280" height="735" />
     </state>
     <state x="625" y="247" width="670" height="676" key="search.everywhere.popup/-1280.23.1280.777/0.23.1920.1015@0.23.1920.1015" timestamp="1583367786975" />
+    <state x="417" y="185" width="670" height="490" key="search.everywhere.popup/0.23.1280.735@0.23.1280.735" timestamp="1583377510009" />
   </component>
 </project>

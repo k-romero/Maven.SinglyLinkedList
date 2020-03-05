@@ -76,6 +76,53 @@ public class SinglyLinkedList<K> {
         return result;
     }
 
+    public boolean containsElement(K element) {
+        Node<K> currentNode = first;
+        for (int i = 0; i < size; i++) {
+            if(currentNode.theElement.equals(element)){
+                return true;
+            } else {
+                currentNode = currentNode.next;
+            }
+        }
+        return false;
+    }
+
+    public void clear() {
+        if(size > 1){
+            Node<K> currentNode = first.next;
+            for (int i = 1; i < size; i++) {
+                if (currentNode.next != null){
+                    currentNode.prev = null;
+                    currentNode = currentNode.next;
+                } else {
+                    currentNode.prev = null;
+                    currentNode = null;
+                }
+            }
+        } else if(size == 1){
+            first = null;
+            last = null;
+        }
+        size = 0;
+    }
+
+    public void removeElement(int index) {
+        Node<K> currentNode = first;
+        for (int i = 0; i < size; i++) {
+            if(index == i){
+                currentNode.prev.next = currentNode.next;
+                currentNode.next.prev = currentNode.prev;
+                currentNode = null;
+                size--;
+                break;
+            }
+            else{
+                currentNode = currentNode.next;
+            }
+        }
+    }
+
 
     private static class Node<K> {
         K theElement;
