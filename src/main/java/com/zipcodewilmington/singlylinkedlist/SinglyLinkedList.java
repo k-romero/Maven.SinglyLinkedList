@@ -137,7 +137,7 @@ public class SinglyLinkedList<K> {
         Node<K> currentNode = first;
         if(size > 1){
             if(currentNode.theElement.toString().compareTo(currentNode.next.theElement.toString()) == -1){
-                Node<K> tempNode = 
+              //Need to fill in this method!
             }
         }
     }
