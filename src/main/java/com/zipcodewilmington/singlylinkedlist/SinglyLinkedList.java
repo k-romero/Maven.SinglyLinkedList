@@ -123,6 +123,16 @@ public class SinglyLinkedList<K> {
         }
     }
 
+    public SinglyLinkedList<K> copyList() {
+        SinglyLinkedList<K> result = new SinglyLinkedList<K>();
+        Node<K> currentNode = first;
+        for (int i = 0; i < size; i++) {
+            result.add(currentNode.theElement);
+            currentNode = currentNode.next;
+        }
+        return result;
+    }
+
 
     private static class Node<K> {
         K theElement;

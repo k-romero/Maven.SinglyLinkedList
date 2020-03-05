@@ -244,6 +244,23 @@ public class SinglyLinkedListTest {
     }
 
     @Test
+    public void copyListTest(){
+        String elm0 = "First Element";
+        String elm1 = "Second Element";
+        String elm2 = "Third Element";
+        String elm3 = "Fourth Element";
+        list.add(elm0);
+        list.add(elm1);
+        list.add(elm2);
+        list.add(elm3);
+        SinglyLinkedList<String> copiedList = list.copyList();
+        Assert.assertTrue(copiedList.containsElement("First Element"));
+        Assert.assertTrue(copiedList.containsElement("Second Element"));
+        Assert.assertTrue(copiedList.containsElement("Third Element"));
+        Assert.assertTrue(copiedList.containsElement("Fourth Element"));
+    }
+
+    @Test
     public void listClearTest(){
         String elm0 = "First Element";
         list.add(elm0);
@@ -271,8 +288,6 @@ public class SinglyLinkedListTest {
         Assert.assertFalse(list.containsElement(elm2));
         Assert.assertFalse(list.containsElement(elm3));
     }
-
-
 
 
 }
