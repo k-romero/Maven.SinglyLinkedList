@@ -133,6 +133,15 @@ public class SinglyLinkedList<K> {
         return result;
     }
 
+    public void sort() {
+        Node<K> currentNode = first;
+        if(size > 1){
+            if(currentNode.theElement.toString().compareTo(currentNode.next.theElement.toString()) == -1){
+                Node<K> tempNode = 
+            }
+        }
+    }
+
 
     private static class Node<K> {
         K theElement;

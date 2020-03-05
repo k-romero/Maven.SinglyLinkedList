@@ -5,6 +5,7 @@ import org.junit.Test;
 
 /**
  * Created by leon on 1/10/18.
+ * Lab Completed by Kevin Romero
  */
 public class SinglyLinkedListTest {
     SinglyLinkedList<String> list;
@@ -258,6 +259,31 @@ public class SinglyLinkedListTest {
         Assert.assertTrue(copiedList.containsElement("Second Element"));
         Assert.assertTrue(copiedList.containsElement("Third Element"));
         Assert.assertTrue(copiedList.containsElement("Fourth Element"));
+    }
+
+    @Test
+    public void sortListTest(){
+        String elm0 = "2 Element";
+        String elm1 = "1 Element";
+        String elm2 = "4 Element";
+        String elm3 = "3 Element";
+        list.add(elm0);
+        list.add(elm1);
+        list.add(elm2);
+        list.add(elm3);
+        list.sort();
+        Assert.assertTrue(list.findIndexOfElement("1 Element") == 0);
+        Assert.assertTrue(list.findIndexOfElement("2 Element") == 1);
+        Assert.assertTrue(list.findIndexOfElement("3 Element") == 2);
+        Assert.assertTrue(list.findIndexOfElement("4 Element") == 3);
+    }
+
+    @Test
+    public void copySingleItemListTest(){
+        String elm0 = "First Element";
+        list.add(elm0);
+        SinglyLinkedList<String> copiedList = list.copyList();
+        Assert.assertTrue(copiedList.containsElement("First Element"));
     }
 
     @Test
