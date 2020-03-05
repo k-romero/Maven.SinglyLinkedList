@@ -63,6 +63,27 @@ public class SinglyLinkedListTest {
         Assert.assertEquals(elm4, list.getLast());
     }
 
+    @Test
+    public void checkSizeTest(){
+        String elm1 = "First Element";
+        String elm2 = "Second Element";
+        String elm3 = "Third Element";
+        String elm4 = "Fourth Element";
+        list.add(elm1);
+        list.add(elm2);
+        list.add(elm3);
+        list.add(elm4);
+        int expected = 4;
+        int actual = list.getSize();
+        Assert.assertEquals(expected,actual);
+    }
+
+    @Test
+    public void checkSizeEmptyTest(){
+        int expected = 0;
+        int actual = list.getSize();
+        Assert.assertEquals(expected,actual);
+    }
 
     @Test
     public void getElementByIndexEnd(){
@@ -106,6 +127,21 @@ public class SinglyLinkedListTest {
         list.add(elm4);
         String expected = "Third Element";
         String actual = list.getElementOfNodeByIndexOfNode(2);
+        Assert.assertEquals(expected,actual);
+    }
+
+    @Test
+    public void findIndexOfElementTest(){
+        String elm0 = "First Element";
+        String elm1 = "Second Element";
+        String elm2 = "Third Element";
+        String elm3 = "Fourth Element";
+        list.add(elm0);
+        list.add(elm1);
+        list.add(elm2);
+        list.add(elm3);
+        int expected = 2;
+        int actual = list.findIndexOfElement("Third Element");
         Assert.assertEquals(expected,actual);
     }
 

@@ -2,6 +2,7 @@ package com.zipcodewilmington.singlylinkedlist;
 
 /**
  * Created by leon on 1/10/18.
+ * Lab completed by Kevin Romero
  */
 public class SinglyLinkedList<K> {
     private int size = 0;
@@ -45,10 +46,6 @@ public class SinglyLinkedList<K> {
         return last.theElement;
     }
 
-    public Node<K> getFirstNode() {
-        return first;
-    }
-
     public K getElementOfNodeByIndexOfNode(int index){
         K result = null;
         if(index < size && index >= 0){
@@ -61,6 +58,21 @@ public class SinglyLinkedList<K> {
                 }
             }
         } else throw new NullPointerException();
+        return result;
+    }
+
+    public int findIndexOfElement(K element) {
+        int result = -1;
+        Node<K> currentNode = first;
+        for (int i = 0; i < size; i++) {
+            if(currentNode.theElement.equals(element)){
+                result = i;
+                break;
+            }
+            else {
+                currentNode = currentNode.next;
+            }
+        }
         return result;
     }
 
