@@ -1,16 +1,17 @@
 package com.zipcodewilmington.singlylinkedlist;
 
-import java.util.LinkedList;
-
 /**
  * Created by leon on 1/10/18.
  */
 public class SinglyLinkedList<K> {
-    public static int size = 0;
-    public Node<K> first;
-    public Node<K> last;
+    private int size = 0;
+    private Node<K> first;
+    private Node<K> last;
 
     public SinglyLinkedList() {
+        size = 0;
+        first = null;
+        last = null;
     }
 
     public boolean firstNodeDoesNotExist(){
@@ -50,43 +51,29 @@ public class SinglyLinkedList<K> {
 
     public K getElementOfNodeByIndexOfNode(int index){
         K result = null;
-        if(index == 0){
-            result = getFirst();
-        } else {
-            Node<K> currentNode = first.next;
+        if(index < size && index >= 0){
+            Node<K> currentNode = first;
             for (int i = 0; i < size; i++) {
-                if(currentNode.index == index){
+                if(i == index){
                     result = currentNode.theElement;
                 } else {
                     currentNode = currentNode.next;
                 }
             }
-        }
+        } else throw new NullPointerException();
         return result;
     }
-
-    public int getNodeIndex(Node<K> nodeToGetIndexFrom) {
-        return nodeToGetIndexFrom.index;
-    }
-
 
 
     private static class Node<K> {
         K theElement;
         Node<K> next;
         Node<K> prev;
-        int index;
 
         Node(Node<K> prev, K element, Node<K> next) {
             theElement = element;
             this.next = next;
             this.prev = prev;
-            if(size == 0){
-                index = 0;
-            }
-            else{
-                index = prev.index + 1;
-            }
         }
     }
 }
