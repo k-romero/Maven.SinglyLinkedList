@@ -134,16 +134,24 @@ public class SinglyLinkedList<K> {
     }
 
     public void sort() {
-        Node<K> currentNode = first;
+        Node<K> currentNode = first.next;
         if(size > 1){
-            if(currentNode.theElement.toString().compareTo(currentNode.next.theElement.toString()) == -1){
-              //Need to fill in this method!
+            for (int i = 0; i < size ; i++) {
+                if(currentNode.theElement.toString().compareTo(currentNode.prev.theElement.toString()) < 0){
+                    K tempElm = currentNode.theElement;
+                    currentNode.theElement = currentNode.prev.theElement;
+                    currentNode.prev.theElement = tempElm;
+                } else {
+                    currentNode = currentNode.next;
+                }
             }
         }
     }
 
 
-    private static class Node<K> {
+
+
+    private static class Node<K>{
         K theElement;
         Node<K> next;
         Node<K> prev;
@@ -153,6 +161,7 @@ public class SinglyLinkedList<K> {
             this.next = next;
             this.prev = prev;
         }
+
     }
 }
 
