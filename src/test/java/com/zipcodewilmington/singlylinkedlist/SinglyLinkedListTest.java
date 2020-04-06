@@ -278,6 +278,7 @@ public class SinglyLinkedListTest {
         Assert.assertTrue(list.findIndexOfElement("4 Element") == 3);
     }
 
+
     @Test
     public void copySingleItemListTest(){
         String elm0 = "First Element";

@@ -4,7 +4,7 @@ package com.zipcodewilmington.singlylinkedlist;
  * Created by leon on 1/10/18.
  * Lab completed by Kevin Romero
  */
-public class SinglyLinkedList<K> {
+public class SinglyLinkedList<K extends Comparable> {
     private int size = 0;
     private Node<K> first;
     private Node<K> last;
@@ -137,7 +137,7 @@ public class SinglyLinkedList<K> {
         Node<K> currentNode = first.next;
         if(size > 1){
             for (int i = 0; i < size ; i++) {
-                if(currentNode.theElement.toString().compareTo(currentNode.prev.theElement.toString()) < 0){
+                if(currentNode.theElement.compareTo(currentNode.prev.theElement) < 0){
                     K tempElm = currentNode.theElement;
                     currentNode.theElement = currentNode.prev.theElement;
                     currentNode.prev.theElement = tempElm;
